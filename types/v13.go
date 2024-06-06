@@ -6,10 +6,10 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/crustio/scale.go/types/convert"
+	"github.com/crustio/scale.go/types/scaleBytes"
+	"github.com/crustio/scale.go/utiles"
 	"github.com/huandu/xstrings"
-	"github.com/itering/scale.go/types/convert"
-	"github.com/itering/scale.go/types/scaleBytes"
-	"github.com/itering/scale.go/utiles"
 )
 
 type MetadataV13Decoder struct {

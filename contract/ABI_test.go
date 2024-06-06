@@ -4,7 +4,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/itering/scale.go/types"
+	"github.com/crustio/scale.go/types"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/itering/scale.go/types/scaleBytes"
-	"github.com/itering/scale.go/utiles"
+	"github.com/crustio/scale.go/types/scaleBytes"
+	"github.com/crustio/scale.go/utiles"
 	"github.com/shopspring/decimal"
 )
 

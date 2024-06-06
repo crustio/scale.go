@@ -6,9 +6,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/itering/scale.go/source"
-	"github.com/itering/scale.go/types/scaleBytes"
-	"github.com/itering/scale.go/utiles"
+	"github.com/crustio/scale.go/source"
+	"github.com/crustio/scale.go/types/scaleBytes"
+	"github.com/crustio/scale.go/utiles"
 )
 
 const limitRecursiveTime = 5

@@ -5,11 +5,11 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/itering/scale.go"
-	"github.com/itering/scale.go/source"
-	"github.com/itering/scale.go/types"
-	"github.com/itering/scale.go/types/scaleBytes"
-	"github.com/itering/scale.go/utiles"
+	"github.com/crustio/scale.go"
+	"github.com/crustio/scale.go/source"
+	"github.com/crustio/scale.go/types"
+	"github.com/crustio/scale.go/types/scaleBytes"
+	"github.com/crustio/scale.go/utiles"
 )
 
 func TestEventsDynamicOriginCallerDecoder(t *testing.T) {

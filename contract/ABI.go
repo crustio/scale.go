@@ -3,7 +3,7 @@ package contract
 import (
 	"encoding/json"
 
-	"github.com/itering/scale.go/types"
+	"github.com/crustio/scale.go/types"
 )
 
 type MetadataAbi struct {

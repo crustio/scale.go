@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	"github.com/itering/scale.go/utiles"
+	"github.com/crustio/scale.go/utiles"
 )
 
 type FixedU8 struct {

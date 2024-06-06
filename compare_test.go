@@ -3,7 +3,7 @@ package scalecodec
 import (
 	"testing"
 
-	"github.com/itering/scale.go/utiles"
+	"github.com/crustio/scale.go/utiles"
 	"github.com/stretchr/testify/assert"
 )
 

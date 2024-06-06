@@ -9,11 +9,11 @@ import (
 	"strings"
 	"unicode/utf8"
 
+	"github.com/crustio/scale.go/types/scaleBytes"
+	"github.com/crustio/scale.go/utiles"
+	"github.com/crustio/scale.go/utiles/crypto/ethereum"
+	"github.com/crustio/scale.go/utiles/uint128"
 	"github.com/huandu/xstrings"
-	"github.com/itering/scale.go/types/scaleBytes"
-	"github.com/itering/scale.go/utiles"
-	"github.com/itering/scale.go/utiles/crypto/ethereum"
-	"github.com/itering/scale.go/utiles/uint128"
 	"github.com/shopspring/decimal"
 )
 

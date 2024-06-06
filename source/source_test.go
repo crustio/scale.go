@@ -1,7 +1,7 @@
 package source_test
 
 import (
-	"github.com/itering/scale.go/source"
+	"github.com/crustio/scale.go/source"
 	"testing"
 )
 

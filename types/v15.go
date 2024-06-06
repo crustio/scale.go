@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"fmt"
 
+	"github.com/crustio/scale.go/types/convert"
+	"github.com/crustio/scale.go/utiles"
 	"github.com/huandu/xstrings"
-	"github.com/itering/scale.go/types/convert"
-	"github.com/itering/scale.go/utiles"
 )
 
 type MetadataV15Decoder struct {
@@ -198,11 +198,12 @@ type RuntimeApiMetadataV15 struct {
 }
 
 // Process
-// "RuntimeApiMetadataV15": {
-//    "name": "Text",
-//    "methods": "Vec<RuntimeApiMethodMetadataV15>",
-//    "docs": "Vec<Text>"
-//  }
+//
+//	"RuntimeApiMetadataV15": {
+//	   "name": "Text",
+//	   "methods": "Vec<RuntimeApiMethodMetadataV15>",
+//	   "docs": "Vec<Text>"
+//	 }
 func (m *RuntimeApiMetadataV15) Process() {
 	runtimeApiMetadata := RuntimeApiMetadata{}
 	runtimeApiMetadata.Name = m.ProcessAndUpdateData("Text").(string)
@@ -216,10 +217,11 @@ type RuntimeApiMethodParamMetadataV15 struct {
 }
 
 // Process
-// "RuntimeApiMethodParamMetadataV15": {
-//    "name": "Text",
-//    "type": "SiLookupTypeId"
-//  },
+//
+//	"RuntimeApiMethodParamMetadataV15": {
+//	   "name": "Text",
+//	   "type": "SiLookupTypeId"
+//	 },
 func (r *RuntimeApiMethodParamMetadataV15) Process() {
 	ra := RuntimeApiMethodParamMetadata{}
 	ra.Name = r.ProcessAndUpdateData("Text").(string)
