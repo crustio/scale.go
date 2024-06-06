@@ -151,6 +151,8 @@ func regBaseType() {
 		&Empty{},
 		&OuterEnumsMetadataV15{},
 		&CustomMetadataV15{},
+		&FileInfoV2{},
+		&Replica{},
 	}
 	for _, class := range scales {
 		valueOf := reflect.ValueOf(class)

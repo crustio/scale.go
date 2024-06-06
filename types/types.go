@@ -495,3 +495,24 @@ func (b *BitVec) Process() {
 func (b *BitVec) TypeStructString() string {
 	return "BitVec"
 }
+
+type FileInfoV2 struct {
+	Struct
+}
+
+func (f *FileInfoV2) Init(data scaleBytes.ScaleBytes, option *ScaleDecoderOption) {
+	f.Struct.TypeMapping = &TypeMapping{Names: []string{"FileSize", "Spower", "ExpiredAt", "CalculatedAt",
+		"Amount", "Prepaid", "ReportedReplicaCount", "RemainingPaidCount", "Replicas"},
+		Types: []string{"u64", "u64", "BlockNumber", "BlockNumber", "Compact<Balance>", "Compact<Balance>", "u32", "u32", "BTreeMap<AccountId, Replica<AccountId>>"}}
+	f.Struct.Init(data, option)
+}
+
+type Replica struct {
+	Struct
+}
+
+func (r *Replica) Init(data scaleBytes.ScaleBytes, option *ScaleDecoderOption) {
+	r.Struct.TypeMapping = &TypeMapping{Names: []string{"Who", "ValidAt", "Anchor", "IsReported", "CreateAt"},
+		Types: []string{"AccountId", "BlockNumber", "Vec<u8>", "bool", "Option<u32>"}}
+	r.Struct.Init(data, option)
+}
